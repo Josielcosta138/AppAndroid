@@ -1,2 +1,3 @@
 # AppAndroid
-S.A
+APLICATIVO ANDROID - EM ANDAMENTO...
+
