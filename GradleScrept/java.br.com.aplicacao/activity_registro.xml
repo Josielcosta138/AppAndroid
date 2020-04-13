@@ -9,8 +9,9 @@
     android:paddingTop="80dp"
     tools:context=".RegistroActivity">
 
-
+    /// EditText nome
     <com.google.android.material.textfield.TextInputLayout
+
         android:layout_width="match_parent"
         android:layout_height="59dp">
 
@@ -23,6 +24,71 @@
             android:textColor="@color/colorText" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+    /// EditText Email
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:hint="email"
+            android:inputType="Textemailandress"
+            android:TextColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    /// EditText senha
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_senha"
+            android:hint="senha"
+            android:inputType="textPassword"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/confirma_senha"
+            android:hint="confirma senha"
+            android:inputType="textPassword"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Registrar"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+</LinearLayout>
 
 
 
